@@ -5,7 +5,7 @@ import sys
 
 ALPHABETICAL = string.ascii_letters
 NUMERIC = string.digits
-RESULT_LENGTH = 10240
+RESULT_LENGTH = 10240 # 10240 ( 1024 * 10 ) was chosen so roughly 1024 iterations is needed to get 10 MB
 MAX_WHITESPACES = 10
 
 def gen_object():
@@ -47,7 +47,6 @@ def main():
 
     write_to_file(filename, str_to_write)
     print(loop + ' items written')    
-
 
 if __name__ == '__main__':
     main()
