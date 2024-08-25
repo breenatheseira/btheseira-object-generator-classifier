@@ -5,10 +5,12 @@ FROM python:3.12.5-bookworm
 WORKDIR /usr/app
 
 # Making directory
-RUN mkdir ./docker-volume
+RUN mkdir ./results
+
+COPY results ./results
 
 COPY file_reader.py ./
 
-CMD exec "python3 ./file_reader.py > ./docker-volume/results.txt"
+CMD [ "python3", "./file_reader.py" ]
 
-VOLUME [ "./docker-volume" ]
+VOLUME [ "./results" ]

@@ -35,7 +35,7 @@ def write_to_file(filename, str):
     f.close()
 
 def main():
-    filename = 'random-objects.txt'
+    filename = './results/random-objects.txt'
     print('Writing to ' + filename)
 
     str_to_write = gen_object()

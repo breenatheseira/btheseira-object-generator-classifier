@@ -24,10 +24,10 @@ def identify(text):
         return 'NOT IDENTIFIABLE'
 
 def is_alphanumeric(text):
-    return re.search(r'^\s+[A-Z0-9]+\s+$', text)
+    return re.search(r'^\s+[a-zA-Z0-9]+\s+$', text)
 
 def is_alphabetical(text):
-    return re.search(r'^[A-Z]+$', text)
+    return re.search(r'^[a-zA-Z]+$', text)
 
 def is_integer(text):
     return re.search(r'^-?[0-9]+$', text)
@@ -37,7 +37,7 @@ def is_real_number(text):
 
 def main():
     print('Starting file reader')
-    read_from_file('random-objects.txt')
+    read_from_file('./results/random-objects.txt')
     print('Done!')
 
 if __name__ == '__main__':
