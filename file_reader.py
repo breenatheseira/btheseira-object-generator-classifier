@@ -37,7 +37,7 @@ def is_real_number(text):
 
 def main():
     print('Starting file reader')
-    read_from_file('random-strings.txt')
+    read_from_file('random-objects.txt')
     print('Done!')
 
 if __name__ == '__main__':

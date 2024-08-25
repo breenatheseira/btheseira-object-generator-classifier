@@ -5,7 +5,7 @@ import sys
 
 ALPHABETICAL = string.ascii_letters
 NUMERIC = string.digits
-RESULT_LENGTH = 10240 # 10240 ( 1024 * 10 ) was chosen so roughly 1024 iterations is needed to get 10 MB
+RESULT_LENGTH = 10240 # 10240 ( 1024 * 10 ) was chosen to shorten the time taken to get 10 MB (1024 * 1024 * 10)
 MAX_WHITESPACES = 10
 
 def gen_object():
@@ -35,7 +35,7 @@ def write_to_file(filename, str):
     f.close()
 
 def main():
-    filename = 'strings.txt'
+    filename = 'random-objects.txt'
     print('Writing to ' + filename)
 
     str_to_write = gen_object()
@@ -46,7 +46,7 @@ def main():
         loop += 1
 
     write_to_file(filename, str_to_write)
-    print(str(loop) + ' items written')    
+    print(str(loop) + ' items generated')    
 
 if __name__ == '__main__':
     main()
