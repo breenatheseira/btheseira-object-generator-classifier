@@ -46,7 +46,7 @@ def main():
         loop += 1
 
     write_to_file(filename, str_to_write)
-    print(loop + ' items written')    
+    print(str(loop) + ' items written')    
 
 if __name__ == '__main__':
     main()
