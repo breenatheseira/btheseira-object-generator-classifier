@@ -11,6 +11,6 @@ COPY results ./results
 
 COPY file_reader.py ./
 
-CMD [ "python3", "./file_reader.py" ]
+CMD [ "sh", "-c", "python3 ./file_reader.py > ./results/classified.txt" ]
 
 VOLUME [ "./results" ]

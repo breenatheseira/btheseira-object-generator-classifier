@@ -1,0 +1,8 @@
+services:
+  scripts:
+    image: py-app:latest
+    volumes: 
+      - ./results:/usr/app/results
+volumes:
+  results:
+    external: true
