@@ -1,5 +1,7 @@
 ## A challenge to create and classify objects based on their type.
 
+This program uses Python 3.12.5 and its core libraries.
+
 The command line instructions to complete each challenge is as below:
 
 ### Challenge A:
