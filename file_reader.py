@@ -7,9 +7,8 @@ def read_from_file(filepath):
         objects = line.split(',')
         for object in objects:
             type = identify(object)
-            string = 'Object: "' + object.strip() + '" Type: ' + type + '\n'
+            string = type + ': "' + object.strip() + '"\n'
             print(string)
-        file.close()
             
 def identify(text):
     if is_alphanumeric(text):
@@ -36,9 +35,9 @@ def is_real_number(text):
     return re.search(r'^[0-9]+[.][0-9e+]+$', text)
 
 def main():
-    print('Starting file reader')
+    print('Starting file reader\n')
     read_from_file('./results/random-objects.txt')
-    print('Done!')
+    print('\nDone!')
 
 if __name__ == '__main__':
     main()
