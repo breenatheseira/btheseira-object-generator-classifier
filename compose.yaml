@@ -1,7 +1,9 @@
 services:
   scripts:
+    container_name: py-app
+    build: .
     image: py-app:latest
-    volumes: 
+    volumes:
       - ./results:/usr/app/results
 volumes:
   results:
