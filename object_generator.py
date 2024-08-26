@@ -45,7 +45,7 @@ def bytes_to_megabytes(bytes):
 def main():
     filename = './results/random-objects.txt'
     print(f'Writing to {filename}')
-    print(f'This process takes about 3 - 5 minutes...')
+    print(f'This process may take about 3 - 5 minutes...')
 
     str_to_write = gen_object()
     loop = 1
